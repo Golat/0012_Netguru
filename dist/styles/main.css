@@ -50,7 +50,7 @@ body {
   color: #a2abbd; }
 
 .wrapper {
-  width: 520px;
+  width: 500px;
   margin: auto; }
 
 .radio__header {
@@ -76,34 +76,24 @@ body {
     display: inline-block; }
 
 .radio__container {
-  background-color: #2f2f3a; }
+  background-color: #2f2f3a;
+  padding: 15px 25px; }
 
 .radio__station {
   background-color: #2f2f3a;
   font-size: 30px;
-  width: 90%;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
-  -ms-flex-align: center;
-      align-items: center;
-  border-bottom: 1px solid #40404a;
-  margin: auto; }
-  .radio__station:nth-child(1) {
-    padding-top: 25px; }
-  .radio__station:nth-last-child(1) {
-    border-bottom: none;
-    padding-bottom: 25px; }
+  margin: 0;
+  padding: 25px 0px;
+  list-style-type: none; }
+  .radio__station + li {
+    border-top: 1px solid #40404a; }
   .radio__station__name {
-    display: inline-block;
-    cursor: pointer; }
-  .radio__station__freq {
-    text-align: right;
-    display: inline-block;
-    margin: 25px 0px;
-    font-weight: bold;
-    cursor: pointer; }
+    display: block; }
+    .radio__station__name span {
+      float: right;
+      font-weight: bold; }
+  .radio__station__descr {
+    display: none; }
 
 .radio__footer {
   border-radius: 0px 0px 30px 30px;
