@@ -93,7 +93,12 @@ body {
       float: right;
       font-weight: bold; }
   .radio__station__descr {
-    display: none; }
+    display: none;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-align: center;
+        -ms-grid-row-align: center;
+        align-items: center; }
 
 .radio__footer {
   border-radius: 0px 0px 30px 30px;
