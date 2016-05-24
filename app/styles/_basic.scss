@@ -27,6 +27,7 @@ body {
         img {
             height: 35px;
             display: inline-block;
+            cursor: pointer;
         }
         
         h1 {
@@ -34,46 +35,52 @@ body {
         }
     }
     
+    &__container {
+        background-color: #2f2f3a;
+    }
+    
     &__station {
-        color: #a2abbd;
         background-color: #2f2f3a;
         font-size: 30px;
-        width: 100%;
+        width: 90%;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        border-bottom: 1px solid #40404a;
+        margin: auto;
+        
+        &:nth-child(1){
+            padding-top: 25px;   
+        }
+        
+        &:nth-last-child(1){
+            border-bottom: none;
+            padding-bottom: 25px;   
+        }
         
         &__name {
             display: inline-block;
-//            width: 39%;
-            margin: 25px;
+            cursor: pointer;
         }
         
         &__freq {
             text-align: right;
             display: inline-block;
-//            width: 38%;
-            margin: 25px;
+            margin: 25px 0px;
             font-weight: bold;
+            cursor: pointer;
         }
-    }
-    
-    &__line {
-        height: 1px;
-        width: 91%;
-        background-color: #43434d;
-        margin: auto;
     }
     
     &__footer {
         border-radius: 0px 0px 30px 30px;
-        border: 2px solid;
+        border: solid #4d505c;
+        border-width: 2px 0px 0px 0px;
         text-align: center;
         padding: 30px 20px;
         font-size: 30px;
         margin-bottom: 30px;
         box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.7);
-        border-color: #22222b;
         
         &__text {
             color: $brandcolor;
